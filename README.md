@@ -1,4 +1,4 @@
-# CyberSec
+# Cyber Securtiy
 
 This repository contains all the folders of My cyber security journey. current tasks ahead:
 1) Python for Cybersecurity:
