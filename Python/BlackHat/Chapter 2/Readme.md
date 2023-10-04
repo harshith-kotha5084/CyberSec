@@ -15,10 +15,10 @@ Using this we can understand the various unknown protocols, modify traffic being
    
    **Steps to run this:**
 -    First, we have to set our proxy using this command:
->    sudo python proxy.py <ipaddress> 21 ftp.sun.ac.za 21 True
+>    sudo python proxy.py ipaddress 21 ftp.sun.ac.za 21 True
 -    This fires up an FTP server and sets up a proxy that listens to all connections coming to the specified _ipaddress_ via port 21. sudo because port 21 required administrative privileges.
 -    In another terminal, we can start an FTP session to test this using:
->    ftp <ipaddress>
+>    ftp ipaddress
 -    Here the '_ipaddress_' is the address of the machine where the proxy is running. This proxy acts as the intermediary middleman that reads and logs the hexdump of the communication between the client and the remote server.
 -    After starting the session you have to provide username and password for authentication(given in the script).
 -    Then we can see the communication happenning. 
