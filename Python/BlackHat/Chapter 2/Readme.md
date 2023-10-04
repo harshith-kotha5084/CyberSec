@@ -22,3 +22,8 @@ Using this we can understand the various unknown protocols, modify traffic being
 -    Here the '_ipaddress_' is the address of the machine where the proxy is running. This proxy acts as the intermediary middleman that reads and logs the hexdump of the communication between the client and the remote server.
 -    After starting the session you have to provide username and password for authentication(given in the script).
 -    Then we can see the communication happenning. 
+
+
+
+
+The Link to detailed explanation(google slides): https://docs.google.com/presentation/d/1LTp6GEMtEA-8xxXV11LsQUF29OmX6aBm2zxx_fGsoWE/edit?usp=sharing
