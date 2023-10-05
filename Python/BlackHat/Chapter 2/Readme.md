@@ -35,9 +35,22 @@ _ssh_server.py:_ This file acts as an SSH server that takes a key ('test_rsa.key
    **Steps to run this:**
 -    First, open the Kali machine and start the server by running:
 >    python ssh_server.py
--    Then in the linux or at any machine run the client file:
+-    Then in the Linux or on any machine run the client file:
 >    python ssh_rcmd.py
--    Enter the username and password to login to the ssh. these are specified inside the server file for authentication purposes.
--    Finally start giving commands from server's side that runs on the client's side and prints output on the server's console again. 
+-    Enter the username and password to log in to the ssh. these are specified inside the server file for authentication purposes.
+-    Finally start giving commands from the server's side that run on the client's side and print output on the server's console again.
 
-The Link to detailed explanation(google slides): https://docs.google.com/presentation/d/1LTp6GEMtEA-8xxXV11LsQUF29OmX6aBm2zxx_fGsoWE/edit?usp=sharing
+This directory also includes a file called _paramiko-main.zip_ which includes all the demo files and documentation of the paramiko library which we are going to use in the next section. 
+
+**4. SSH Tunneling:**
+In some machines like Windows, we cannot deploy SSH servers for various reasons. Now if we want to expose a service remotely that the system offers, but use SSH with Python, we have to run an SSH client on that Windows system and expose this service to a remote SSH server. This process is called reverse SSH Tunneling. 
+
+   **Steps to run this:**
+-    We start with running a web server on any system(here Kali). In this example, we used web.py for that job running it at a particular IP address and port.
+-    This web server acts as a service that runs on the internal network of our machine where we cannot deploy an SSH server.
+-    Now we start by running a Client on this machine, that exposes this service to a remote SSH server. we run:
+>    python rforward.py 192.168.92.1 -p 8081 -r 192.168.92.128:3000 --user='harshith' --password
+-    Now, we have to give the password of our ssh server, and this starts the session.
+-    If we try to access that web server now, from our remote SSH server, we will be able to open a SSH tunnel and access it. 
+
+The Link to detailed explanation of all these above tasks with outputs attached (google slides): https://docs.google.com/presentation/d/1LTp6GEMtEA-8xxXV11LsQUF29OmX6aBm2zxx_fGsoWE/edit?usp=sharing
