@@ -23,7 +23,21 @@ Using this we can understand the various unknown protocols, modify traffic being
 -    After starting the session you have to provide username and password for authentication(given in the script).
 -    Then we can see the communication happenning. 
 
+**3. SSH with Paramiko:**
+This task contains three files ssh_cmd.py, ssh_rcmd.py, and ssh_server.py. So here we look into how to run SSH using paramiko library. 
 
+_ssh_cmd.py:_ This file, when run acts as a client that makes a connection to ssh server whose details are prompted at the console. Next, it takes in a single command that is sent to the server, executed and its output is then printed back onto the console of the client. 
 
+_ssh_rcmd.py:_ This file, when run acts as a client that again makes a connection to the server like before, but instead of a single command, it runs multiple in a loop. the other difference is that it acts reverse here, instead of sending commands to the server, it receives from it and runs and sends back the output. 
+
+_ssh_server.py:_ This file acts as an SSH server that takes a key ('test_rsa.key') for authentication purposes and also contains a username-password authentication facility. this first connects to the client machine, thereafter accepting an ssh session from the client for ssh communications. 
+
+   **Steps to run this:**
+-    First, open the Kali machine and start the server by running:
+>    python ssh_server.py
+-    Then in the linux or at any machine run the client file:
+>    python ssh_rcmd.py
+-    Enter the username and password to login to the ssh. these are specified inside the server file for authentication purposes.
+-    Finally start giving commands from server's side that runs on the client's side and prints output on the server's console again. 
 
 The Link to detailed explanation(google slides): https://docs.google.com/presentation/d/1LTp6GEMtEA-8xxXV11LsQUF29OmX6aBm2zxx_fGsoWE/edit?usp=sharing
