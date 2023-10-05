@@ -20,3 +20,5 @@ Supported in both _Windows_ and _Linux_.
 The additional step of sending an IOCTL to the network card driver to enable promiscuous mode. If you’re running Windows in a virtual machine, you will likely get a notification that the guest operating system is enabling promiscuous mode
 
 To test, just run the code normally
+
+For detailed explanation: https://docs.google.com/presentation/d/18s7v-rdSYV9tud04ALG4U6gPTv4z_sU2c9xrEqCLPQQ/edit?usp=sharing
