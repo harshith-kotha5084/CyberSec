@@ -45,7 +45,7 @@ error has been caused.
 
 This is an additional step further to the previous code that actually extracts the ICMP details as well which will help us write our scanner for hosts in the next section.
 
-> sudo python3 sniffer_with_icmp
+> sudo python3 sniffer_with_icmp.py
 
 To test this, simply start pinging through another terminal.
 
