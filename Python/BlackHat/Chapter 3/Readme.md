@@ -46,12 +46,14 @@ error has been caused.
 This is an additional step further to the previous code that actually extracts the ICMP details as well which will help us write our scanner for hosts in the next section.
 
 > sudo python3 sniffer_with_icmp
+
 To test this, simply start pinging through another terminal.
 
 **4. Scanner:**
 Now this get's interesting as we actually use the '_ipaddress_' module to work with subnets and other details of IPv4 network. We start by sending UDP datagrams all over the subnet and wait for the ICMP packets that come back which say error and unreachable indicating there is an active host on the other side. 
 
 > sudo python3 scanner.py
+
 we will be able to get all the active hosts that are present on the network local to our system(the address we mentioned in the code). 
 
 For a detailed explanation: https://docs.google.com/presentation/d/18s7v-rdSYV9tud04ALG4U6gPTv4z_sU2c9xrEqCLPQQ/edit?usp=sharing
