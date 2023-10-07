@@ -38,5 +38,5 @@ What happens here?
 - First, the attack machine sends poisoned ARP packets to both the victim machine and the gateway.
 - They belive it and change their Cache entries, with IPs remaining one another's but MAC changing to attack the machine's MAC.
 - SO all the packets, though destined for each other between the Victim machine and Gateway, everything goes through the attack machine.
-- We collect all the packet traces and store them in pcap files for further inspection.
+- We collect all the packet traces and store them in pcap files for further inspection.(in arper.pcap files here)
 
