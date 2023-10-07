@@ -46,7 +46,6 @@ So here we take in pcap traces and process them. These codes use the scapy libra
 - The second program, _detector.py_, analyzes each of those image files to determine if it contains a face. If it does, it writes a new image to disk, adding a box around each face in the image.
 
 The second file uses opencv for face detection in the images found. 
-This code was generously shared by Chris Fidao at http://www.fideloper
-.com/facial-detection/. 
+This code was generously shared by Chris Fidao at http://www.fideloper.com/facial-detection/. 
 
 Link to the document: https://docs.google.com/presentation/d/1MYDq7k_-4r39s6xOe0l6cB5e3ubQhXlbissu3JhO5QQ/edit?usp=sharing
