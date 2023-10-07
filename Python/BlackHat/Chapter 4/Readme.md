@@ -40,3 +40,13 @@ What happens here?
 - SO all the packets, though destined for each other between the Victim machine and Gateway, everything goes through the attack machine.
 - We collect all the packet traces and store them in pcap files for further inspection.(in arper.pcap files here)
 
+**3. pcap Processing:**
+So here we take in pcap traces and process them. These codes use the scapy library of python to read the pcap files, parse them and take out any images present in the traces and save them inside some files. 
+- The first program, _recapper.py_, analyzes a pcap file, locates any images that are present in the streams contained in the pcap file, and writes those images to disk.
+- The second program, _detector.py_, analyzes each of those image files to determine if it contains a face. If it does, it writes a new image to disk, adding a box around each face in the image.
+
+The second file uses opencv for face detection in the images found. 
+This code was generously shared by Chris Fidao at http://www.fideloper
+.com/facial-detection/. 
+
+Link to the document: https://docs.google.com/presentation/d/1MYDq7k_-4r39s6xOe0l6cB5e3ubQhXlbissu3JhO5QQ/edit?usp=sharing
