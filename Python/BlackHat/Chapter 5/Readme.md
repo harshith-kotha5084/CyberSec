@@ -129,3 +129,5 @@ then find these lines and replace with you names:
 > sudo systemctl start mysql
 
 Finally you can open the link 'http://localhost/' on your browser to see the Web Application running. 
+
+Link to the slides: https://docs.google.com/presentation/d/1lsI4MnmlxLXUF82VzB9v_1oyNlIi6_9TSIRsJRGw894/edit?usp=sharing
