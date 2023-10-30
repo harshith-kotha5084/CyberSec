@@ -40,3 +40,5 @@ we push everything and create the trojan on the target machine, with the name _g
 we run the file normally and notice that the trojan connects to the repo, gets the config file and then the modules and run it. then all the data is pushed into the data folder. 
 
 Note: do not forget to change the username and password of your github account in the file. 
+
+link to slides: https://docs.google.com/presentation/d/1UTs_lQGyKFMOdSBiloV6ThCNzEGHJU21Dd8zCxYEIyc/edit?usp=sharing
