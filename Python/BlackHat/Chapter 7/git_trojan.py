@@ -7,11 +7,11 @@ import sys
 import threading
 import time
 from datetime import datetime
-tok='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'
+tok=''
 
 def github_connect():
 	token = tok
-	user = 'harshith-kotha5084'
+	user = ''
 	sess = github3.login(token=token)
 	return sess.repository(user, 'trojan')
 		
