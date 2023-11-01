@@ -25,4 +25,6 @@ specify those inside the file _paste_exfil.py_ and run it. Also, edit the main s
 you can log into in the Pastebin website and find the pasted file which you can decrypt later. 
 For Windows: you make use of the Internet Explorer COM object to navigate, change the HTML code and paste whatever you want. 
 
+link to slides: https://docs.google.com/presentation/d/1GMfplMfh1MtG91CiFoDOhsszuxgW_bYcuor-H8bvqRs/edit?usp=sharing
+
 The last file _exfil.py_ puts everything together so you can use any methods based on your need and convenience.
